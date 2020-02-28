@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/">
+        <ion-icon slot="start" name="md-arrow-back"></ion-icon>
+        Atras
+      </ion-button>
+    </ion-buttons>
+    <ion-title>show</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-input type="text" placeholder="Nombre" [value]="crud.nombre" [(ngModel)]="crud.nombre"></ion-input>
+  <ion-button (click)="guardarCrud()" expand="full" fill="default" type="primary">
+    Click me
+  </ion-button>
+</ion-content>
